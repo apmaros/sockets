@@ -15,10 +15,10 @@ Resolves a IP address for a domain name
 
 
 # Usage
-*install* - `make install`<br>
-- installs all applications to `./build`
+- `make install` - installs all applications to build folder - `./build`
+- `make <application>` - installs specific application (see Applications) - `make udp_ping_server`
 
-example on how to run:
+example on how to run a application:
 ```
 ./build/dns_lookup google.com
   resolving hostname=google.com
