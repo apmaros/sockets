@@ -6,7 +6,7 @@ CC=gcc
 #  -g    adds debugging information to the executable file
 #  -Wall turns on most, but not all, compiler warnings
 CFLAGS  = -g -Wall
-INCLUDES = -I./src/lib
+INCLUDES = -I./src/include
 
 SRC_DIR = ./src
 BUILD_DIR = ./build
@@ -18,7 +18,6 @@ DNS_LOOKUP_TARGET = dns_lookup
 DNS_RAW_LOOKUP_TARGET = dns_raw_lookup
 
 install: make_build_dir $(TCP_PING_SERVER_TARGET) $(TCP_SERVER_TARGET) $(UDP_SERVER_TARGET) $(DNS_LOOKUP_TARGET) $(DNS_RAW_LOOKUP_TARGET)
-
 
 $(TCP_PING_SERVER_TARGET):
 	$(CC) $(INCLUDES) $(SRC_DIR)/$(TCP_PING_SERVER_TARGET).c -o $(BUILD_DIR)/$(TCP_PING_SERVER_TARGET)
