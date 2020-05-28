@@ -13,6 +13,8 @@ Resolves a IP address for a domain name
 - `dns_lookup` - resolve domain name using OS API
 - `dns_raw_lookup` - resolves domain name manually creating UDP message
 
+Read [DNS Query](docs/dns\_format.md) to learn how to compose DNS message
+
 
 # Usage
 - `make install` - installs all applications to build folder - `./build`
